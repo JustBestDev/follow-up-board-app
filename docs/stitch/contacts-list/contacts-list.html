@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+
+<html lang="th"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-highest": "#dae2fd", "on-tertiary-container": "#67f4b7", "error": "#ba1a1a", "secondary": "#006398", "on-primary": "#ffffff", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "primary-container": "#4f46e5", "on-tertiary-fixed-variant": "#005236", "secondary-fixed-dim": "#93ccff", "primary": "#3525cd", "primary-fixed-dim": "#c3c0ff", "error-container": "#ffdad6", "on-surface-variant": "#464555", "surface-variant": "#dae2fd", "surface-bright": "#faf8ff", "outline-variant": "#c7c4d8", "tertiary-fixed-dim": "#4edea3", "inverse-on-surface": "#eef0ff", "tertiary-container": "#006e4b", "inverse-primary": "#c3c0ff", "on-tertiary-fixed": "#002113", "on-primary-container": "#dad7ff", "tertiary": "#005338", "on-error-container": "#93000a", "surface-container": "#eaedff", "inverse-surface": "#283044", "surface-container-low": "#f2f3ff", "secondary-fixed": "#cce5ff", "background": "#faf8ff", "on-secondary-fixed-variant": "#004b73", "secondary-container": "#5bb8fe", "primary-fixed": "#e2dfff", "on-background": "#131b2e", "surface-container-high": "#e2e7ff", "on-tertiary": "#ffffff", "on-error": "#ffffff", "on-primary-fixed-variant": "#3323cc", "on-primary-fixed": "#0f0069", "surface-dim": "#d2d9f4", "on-secondary-container": "#00476e", "on-secondary-fixed": "#001d31", "outline": "#777587", "surface-tint": "#4d44e3", "surface": "#faf8ff", "tertiary-fixed": "#6ffbbe", "on-surface": "#131b2e" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-desktop": "1.5rem", "space-lg": "1.25rem", "gutter": "0.75rem", "margin": "1rem", "margin-desktop": "2rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-md": "0.875rem", "space-xl": "1.75rem" }, fontFamily: { "headline-md": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"], "label-md": ["Inter"], "label-lg": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "headline-sm": ["Inter"], "headline-xl": ["Inter"], "headline-lg": ["Inter"] }, fontSize: { "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "18px", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-xl": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen flex flex-col antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><img alt="Follow-up Board Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1UdbsyCH6yWJVe0bsyeohAQHMgnmRJxj42rtBIRCd1lobNcWQ7pdGgQAnsbd459ErqYeyHSUmuhiVH4625K4Flqi3cy_mCpRB4rEDkFZehW6hXbMPw1rqQsnvPMMSUcUZAkL8kXXjq372t44RGJTxIHqzxibnCyURL7Cre717JPBlwokp4cooNKEQGvs73rfPls_acpwcJQjDgyNaqqHtHom7TQhpxPOcmkCuU92WKMcTC3Y7FAJPDU6Tc"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-surface truncate leading-tight">Follow-up Board</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Contacts</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors"><span class="material-symbols-outlined">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="flex items-center justify-center p-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu2DbKY4DBfwB-D7u7DHrPykfHnG0GTcF926x6SC5A2P8ACs7ngEILlx3MCaaOa5aedEoVqydf1bn7I4-6JvjZdbPZ8M_oTcQBUUSauW7IZsYZ5a1p9fc8MKiz8sntFr4_TXBdm20u2wQ-U4GSJfkiw_0ANSPIsek51l1fiNIMcscfF73GlCxfiUMoP9InizTrBdhem8dREi0HiN4Q0M62PvQwpyVKI17WS4jr4usZpeM_n5kbWZdc"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 px-margin bg-surface"><div class="flex flex-col w-full gap-space-md">
+<!-- Dynamic Summary & Search Area -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface">รายชื่อผู้ติดต่อ</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">(48 คน)</span>
+</div>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors active:scale-95 shadow-sm" id="filterToggleBtn">
+<span class="material-symbols-outlined text-[18px] text-primary">tune</span>
+<span class="font-label-md text-label-md font-semibold">ตัวกรอง</span>
+<span class="w-2 h-2 rounded-full bg-primary ml-0.5"></span>
+</button>
+</div>
+<!-- Live Search Input -->
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full h-11 pl-10 pr-10 rounded-xl bg-surface-container-lowest text-on-surface placeholder:text-outline text-body-md font-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" id="contactSearchInput" placeholder="ค้นหาชื่อ, เบอร์โทร, อีเมล, บริษัท..." type="text"/>
+<button class="hidden absolute inset-y-0 right-0 pr-3 flex items-center text-outline hover:text-on-surface" id="clearSearchBtn">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+<!-- Horizontal Category Filter Chips -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-0.5 -mx-margin px-margin">
+<button class="filter-chip active flex-shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm transition-all scale-100" data-filter="all">
+<span>ทั้งหมด</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-lowest/20 text-on-primary font-label-sm text-label-sm">48</span>
+</button>
+<button class="filter-chip flex-shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-md text-label-md transition-all" data-filter="followup">
+<span class="w-2 h-2 rounded-full bg-amber-500"></span>
+<span>รอติดตาม</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">18</span>
+</button>
+<button class="filter-chip flex-shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-md text-label-md transition-all" data-filter="contacting">
+<span class="w-2 h-2 rounded-full bg-sky-500"></span>
+<span>กำลังติดต่อ</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">15</span>
+</button>
+<button class="filter-chip flex-shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-md text-label-md transition-all" data-filter="completed">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span>สำเร็จ</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">12</span>
+</button>
+<button class="filter-chip flex-shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-error-container text-on-error-container hover:opacity-90 font-label-md text-label-md transition-all" data-filter="overdue">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+<span>เกินกำหนด</span>
+<span class="px-1.5 py-0.2 rounded-full bg-error text-on-error font-label-sm text-label-sm font-bold">3</span>
+</button>
+</div>
+</div>
+<!-- Sort Bar & Metric Indicator -->
+<div class="flex items-center justify-between px-1 py-1">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>เรียงตาม:</span>
+<button class="font-semibold text-primary flex items-center gap-0.5 hover:underline" id="sortToggleBtn">
+<span id="sortText">วันที่ติดตาม (ใกล้สุด)</span>
+<span class="material-symbols-outlined text-[14px]">expand_more</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-outline">แสดง 5 จาก 48 รายชื่อ</span>
+</div>
+<!-- Contact Cards List Feed -->
+<div class="flex flex-col gap-space-md" id="contactCardsFeed">
+<!-- Card 1: คุณกิตติศักดิ์ เจริญพร -->
+<article class="relative bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all duration-200 overflow-visible" data-card-id="1" data-search="กิตติศักดิ์ เจริญพร nakorntech นครเทค erp 0819876543" data-status="contacting">
+<div class="p-space-md flex flex-col gap-space-sm">
+<!-- Header row -->
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-11 h-11 rounded-full overflow-hidden flex-shrink-0 bg-surface-container-high shadow-inner">
+<img class="w-full h-full object-cover" data-alt="A clean portrait photo of a professional Asian businessman wearing glasses and a neat navy blazer in a modern office setup, warm natural lighting, high resolution corporate headshot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvMjkEzrYpcddSCF8rPaTSszJK_CbWDuCtScxnt6iSA9ta7RvBpamQkgbBU6nx8PHDqTWvW77hotvef9oIuJyzNYgilqNPMHbreRVle9P7NKzV9BpefWfmoQbjYValVALu3bufBUHEmKsOoNP37JCmjRtmT66XsuogcnIDSaT8EtMRdf8PQ4IuboyWzfaXcPwhUlzYfRqaNHu89ydqJpTn9BAkiYlAY8pBVkIkcFgoMBSAg76S4ADG"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">คุณกิตติศักดิ์ เจริญพร</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">บริษัท นครเทค จำกัด</p>
+</div>
+</div>
+<div class="flex items-center gap-1 flex-shrink-0">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              กำลังติดต่อ
+            </span>
+<div class="relative">
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="toggleCardMenu(event, 'menu-1')">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+<div class="hidden absolute right-0 top-9 z-20 w-36 bg-surface-container-lowest rounded-xl shadow-xl py-1 flex-col" id="menu-1">
+<button class="w-full px-3 py-2 text-left font-label-md text-label-md text-on-surface hover:bg-surface-container flex items-center gap-2" onclick="triggerAction('edit', 'คุณกิตติศักดิ์')">
+<span class="material-symbols-outlined text-[16px] text-primary">edit</span>แก้ไขข้อมูล
+                </button>
+<button class="w-full px-3 py-2 text-left font-label-md text-label-md text-on-surface hover:bg-surface-container flex items-center gap-2" onclick="triggerAction('reschedule', 'คุณกิตติศักดิ์')">
+<span class="material-symbols-outlined text-[16px] text-secondary">update</span>เลื่อนนัดหมาย
+                </button>
+<button class="w-full px-3 py-2 text-left font-label-md text-label-md text-error hover:bg-error-container/30 flex items-center gap-2" onclick="triggerAction('delete', 'คุณกิตติศักดิ์')">
+<span class="material-symbols-outlined text-[16px]">delete</span>ลบรายชื่อ
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Follow-up Timing Alert Box -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-high/60">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-[18px] text-primary flex-shrink-0 animate-bounce">alarm</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">ติดตาม: วันนี้ 24 มี.ค. (10:30 น.)</span>
+<span class="font-label-sm text-label-sm text-error font-medium truncate">ด่วนพิเศษ • ตรวจสัญญา</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex-shrink-0">เร่งด่วน</span>
+</div>
+<!-- Note & Context -->
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex items-start gap-2 shadow-inner">
+<span class="material-symbols-outlined text-[16px] text-outline flex-shrink-0 mt-0.5">sticky_note_2</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">"โทรยืนยันใบเสนอราคาซอฟต์แวร์ ERP รอบสุดท้าย พร้อมส่งข้อกำหนดระบบ"</p>
+</div>
+<!-- Contact Detail Badges -->
+<div class="flex flex-wrap items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container">
+<span class="material-symbols-outlined text-[13px] text-primary">phone</span> 081-987-6543
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container">
+<span class="material-symbols-outlined text-[13px] text-tertiary">chat</span> kittisak_tech
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container truncate max-w-[190px]">
+<span class="material-symbols-outlined text-[13px] text-secondary">mail</span> kittisak@nakorntech.co.th
+          </span>
+</div>
+</div>
+<!-- Quick Action Shelf -->
+<div class="px-space-md py-2.5 bg-surface-container-low rounded-b-xl flex items-center justify-between gap-space-xs">
+<a class="flex-1 h-9 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" href="tel:0819876543">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>โทรออก</span>
+</a>
+<button class="flex-1 h-9 rounded-lg bg-tertiary text-on-tertiary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" onclick="triggerLine('kittisak_tech')">
+<span class="material-symbols-outlined text-[18px]">chat_bubble</span>
+<span>LINE แชท</span>
+</button>
+<button class="w-9 h-9 rounded-lg bg-surface-container-highest text-on-surface flex items-center justify-center hover:bg-surface-container active:scale-95 transition-all" onclick="triggerQuickLog('คุณกิตติศักดิ์')">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+</button>
+</div>
+</article>
+<!-- Card 2: คุณชลธิชา วงศ์สวัสดิ์ -->
+<article class="relative bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all duration-200 overflow-visible" data-card-id="2" data-search="ชลธิชา วงศ์สวัสดิ์ ap marketing group chon.ap 0892345678" data-status="followup">
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-11 h-11 rounded-full overflow-hidden flex-shrink-0 bg-surface-container-high shadow-inner">
+<img class="w-full h-full object-cover" data-alt="A radiant headshot of an energetic Thai female marketing executive with stylish short hair wearing smart casual attire against a bright studio background, soft warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9YnLl3vq1bCsPy0RpRS2A1dkW7oeO6KxeSofaOLYYWZv-aloKGym-W-Hh5zMYUtHn7tPJqcaPCkDGmi-63QiM3BFC-Y9-XFovooNU8Z_W0evihMBlezuUk7lbueLei35u0jpnsBRxWVOStYrzJ9C8E_LymuOVnYCJDpeMgoTaBys8Jrn_yZYcniW8jmIZkzIwdZcMuzTEWc5kWpg9Han2jFa14-uTgcjH84RiNk4zf5tzTMqoLZKn"/>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">คุณชลธิชา วงศ์สวัสดิ์</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">AP Marketing Group</p>
+</div>
+</div>
+<div class="flex items-center gap-1 flex-shrink-0">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-amber-100 text-amber-900 font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+              รอติดตาม
+            </span>
+<div class="relative">
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="toggleCardMenu(event, 'menu-2')">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+<div class="hidden absolute right-0 top-9 z-20 w-36 bg-surface-container-lowest rounded-xl shadow-xl py-1 flex-col" id="menu-2">
+<button class="w-full px-3 py-2 text-left font-label-md text-label-md text-on-surface hover:bg-surface-container flex items-center gap-2" onclick="triggerAction('edit', 'คุณชลธิชา')">
+<span class="material-symbols-outlined text-[16px] text-primary">edit</span>แก้ไขข้อมูล
+                </button>
+<button class="w-full px-3 py-2 text-left font-label-md text-label-md text-on-surface hover:bg-surface-container flex items-center gap-2" onclick="triggerAction('reschedule', 'คุณชลธิชา')">
+<span class="material-symbols-outlined text-[16px] text-secondary">update</span>เลื่อนนัดหมาย
+                </button>
+<button class="w-full px-3 py-2 text-left font-label-md text-label-md text-error hover:bg-error-container/30 flex items-center gap-2" onclick="triggerAction('delete', 'คุณชลธิชา')">
+<span class="material-symbols-outlined text-[16px]">delete</span>ลบรายชื่อ
+                </button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-high/40">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-[18px] text-amber-700 flex-shrink-0">event</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">ติดตาม: วันนี้ 24 มี.ค. (13:00 น.)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">อีก 2 ชั่วโมง</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex items-start gap-2 shadow-inner">
+<span class="material-symbols-outlined text-[16px] text-outline flex-shrink-0 mt-0.5">sticky_note_2</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">"ส่งตัวอย่างสัญญาจ้างและข้อตกลงระดับการให้บริการ SLA รอฝ่ายกฎหมายตรวจสอบ"</p>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container">
+<span class="material-symbols-outlined text-[13px] text-primary">phone</span> 089-234-5678
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container truncate max-w-[200px]">
+<span class="material-symbols-outlined text-[13px] text-secondary">mail</span> chon.ap@domain.com
+          </span>
+</div>
+</div>
+<div class="px-space-md py-2.5 bg-surface-container-low rounded-b-xl flex items-center justify-between gap-space-xs">
+<a class="flex-1 h-9 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" href="mailto:chon.ap@domain.com">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span>ส่งอีเมล</span>
+</a>
+<a class="flex-1 h-9 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 hover:bg-surface-container active:scale-95 transition-transform" href="tel:0892345678">
+<span class="material-symbols-outlined text-[18px] text-primary">call</span>
+<span>โทรศัพท์</span>
+</a>
+<button class="w-9 h-9 rounded-lg bg-surface-container-highest text-on-surface flex items-center justify-center hover:bg-surface-container active:scale-95 transition-all" onclick="triggerQuickLog('คุณชลธิชา')">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+</button>
+</div>
+</article>
+<!-- Card 3: คุณวรเมธ ปัญญาดี (Overdue) -->
+<article class="relative bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all duration-200 overflow-visible" data-card-id="3" data-search="วรเมธ ปัญญาดี freelance designer vorameth_p 0923456789" data-status="overdue">
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-11 h-11 rounded-full overflow-hidden flex-shrink-0 bg-surface-container-high shadow-inner">
+<img class="w-full h-full object-cover" data-alt="A portrait photograph of a young creative Asian male designer with modern spectacles and minimal graphic t-shirt in a bright natural light creative studio space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDF_eAqNBN07iv1axHuI6EFMqoF2x00_n35gY_0fo5k5ykzApZI75oKGKn7rR8-KZdIa9gfkTOU_gQaHxNempkpvcLRM63e7rv71Bpt9YAWbyDkte1iDnUjTLZprR2khwvs5d7h_hLK_mQCqFgR8dPn8E4oe0OAEA1I3mWn-IyFdAhrj9dZNja540RjliLmx9bH2BNwEi6EfB39M0ZmZkHJawaYxPzqkjOvDyNw6pQsu5MKWGb14nt"/>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">คุณวรเมธ ปัญญาดี</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Freelance Designer</p>
+</div>
+</div>
+<div class="flex items-center gap-1 flex-shrink-0">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold animate-pulse">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+              เกินกำหนด
+            </span>
+<div class="relative">
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="toggleCardMenu(event, 'menu-3')">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+<div class="hidden absolute right-0 top-9 z-20 w-36 bg-surface-container-lowest rounded-xl shadow-xl py-1 flex-col" id="menu-3">
+<button class="w-full px-3 py-2 text-left font-label-md text-label-md text-on-surface hover:bg-surface-container flex items-center gap-2" onclick="triggerAction('edit', 'คุณวรเมธ')">
+<span class="material-symbols-outlined text-[16px] text-primary">edit</span>แก้ไขข้อมูล
+                </button>
+<button class="w-full px-3 py-2 text-left font-label-md text-label-md text-on-surface hover:bg-surface-container flex items-center gap-2" onclick="triggerAction('reschedule', 'คุณวรเมธ')">
+<span class="material-symbols-outlined text-[16px] text-secondary">update</span>เลื่อนนัดหมาย
+                </button>
+<button class="w-full px-3 py-2 text-left font-label-md text-label-md text-error hover:bg-error-container/30 flex items-center gap-2" onclick="triggerAction('delete', 'คุณวรเมธ')">
+<span class="material-symbols-outlined text-[16px]">delete</span>ลบรายชื่อ
+                </button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-error-container/40">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-[18px] text-error flex-shrink-0">warning</span>
+<span class="font-label-sm text-label-sm text-on-error-container font-semibold truncate">นัดหมาย: เมื่อวานนี้ 23 มี.ค. 2568</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-error text-on-error font-label-sm text-label-sm font-bold flex-shrink-0">เลย 1 วัน</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex items-start gap-2 shadow-inner">
+<span class="material-symbols-outlined text-[16px] text-outline flex-shrink-0 mt-0.5">sticky_note_2</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">"ติดตามการต่ออายุ License รายปี ทีมงานยังไม่ได้รับการยืนยันใบเสร็จ"</p>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container">
+<span class="material-symbols-outlined text-[13px] text-primary">phone</span> 092-345-6789
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container">
+<span class="material-symbols-outlined text-[13px] text-tertiary">chat</span> vorameth_p
+          </span>
+</div>
+</div>
+<div class="px-space-md py-2.5 bg-surface-container-low rounded-b-xl flex items-center justify-between gap-space-xs">
+<a class="flex-1 h-9 rounded-lg bg-error text-on-error font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" href="tel:0923456789">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>ติดต่อด่วน</span>
+</a>
+<button class="flex-1 h-9 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 hover:bg-surface-container active:scale-95 transition-transform" onclick="triggerLine('vorameth_p')">
+<span class="material-symbols-outlined text-[18px] text-tertiary">chat_bubble</span>
+<span>LINE</span>
+</button>
+<button class="w-9 h-9 rounded-lg bg-surface-container-highest text-on-surface flex items-center justify-center hover:bg-surface-container active:scale-95 transition-all" onclick="triggerQuickLog('คุณวรเมธ')">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+</button>
+</div>
+</article>
+<!-- Card 4: คุณณัฐกานต์ ศิริรัตน์ (Completed) -->
+<article class="relative bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all duration-200 overflow-visible opacity-90 hover:opacity-100" data-card-id="4" data-search="ณัฐกานต์ ศิริรัตน์ beyond supply บียอนด์ natthakan 0651129988" data-status="completed">
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-11 h-11 rounded-full overflow-hidden flex-shrink-0 bg-surface-container-high shadow-inner">
+<img class="w-full h-full object-cover" data-alt="A professional and friendly portrait of a mature Thai business woman in smart business suit smiling confidently, softly blurred modern corporate office background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA-CUjaZZ88l-vufCQO__7LlfgfRxrTXHUKUeQn0kvd_u9CYi_QBy-rP9LOX3W1zNuVWc2rZYwZSgK2YwVNhQ8-ugL8hQZIhLlMtIbpk1z62tuYf0fURUzYjdF6N2YE6scNTE-fH1tfvLBbyYHZfCCR_eJgvRTMhXK3AYD0UxvhSQ8z_JgQUSp7II40lTF6JfOl6rWFlcsidN_ru6sgsGFnSDMmAlblOKML8OMcKxjg0pYBSrpn0JY"/>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">คุณณัฐกานต์ ศิริรัตน์</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">บริษัท บียอนด์ ซัพพลาย จำกัด</p>
+</div>
+</div>
+<div class="flex items-center gap-1 flex-shrink-0">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-900 font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+              สำเร็จ
+            </span>
+<div class="relative">
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="toggleCardMenu(event, 'menu-4')">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+<div class="hidden absolute right-0 top-9 z-20 w-36 bg-surface-container-lowest rounded-xl shadow-xl py-1 flex-col" id="menu-4">
+<button class="w-full px-3 py-2 text-left font-label-md text-label-md text-on-surface hover:bg-surface-container flex items-center gap-2" onclick="triggerAction('edit', 'คุณณัฐกานต์')">
+<span class="material-symbols-outlined text-[16px] text-primary">edit</span>แก้ไขข้อมูล
+                </button>
+<button class="w-full px-3 py-2 text-left font-label-md text-label-md text-on-surface hover:bg-surface-container flex items-center gap-2" onclick="triggerAction('reschedule', 'คุณณัฐกานต์')">
+<span class="material-symbols-outlined text-[16px] text-secondary">update</span>เลื่อนนัดหมาย
+                </button>
+<button class="w-full px-3 py-2 text-left font-label-md text-label-md text-error hover:bg-error-container/30 flex items-center gap-2" onclick="triggerAction('delete', 'คุณณัฐกานต์')">
+<span class="material-symbols-outlined text-[16px]">delete</span>ลบรายชื่อ
+                </button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-high/30">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-[18px] text-tertiary flex-shrink-0">check_circle</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">ติดตามผล: 28 มี.ค. 2568 (หลังติดตั้ง)</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">ปิดดีลแล้ว</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex items-start gap-2 shadow-inner">
+<span class="material-symbols-outlined text-[16px] text-outline flex-shrink-0 mt-0.5">sticky_note_2</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">"เซ็นสัญญาและชำระเงินงวดแรกเรียบร้อย ส่งมอบงาน Phase 1 ตามแผน"</p>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container">
+<span class="material-symbols-outlined text-[13px] text-primary">phone</span> 065-112-9988
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container truncate max-w-[210px]">
+<span class="material-symbols-outlined text-[13px] text-secondary">mail</span> natthakan@beyondsupply.com
+          </span>
+</div>
+</div>
+<div class="px-space-md py-2.5 bg-surface-container-low rounded-b-xl flex items-center justify-between gap-space-xs">
+<a class="flex-1 h-9 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 hover:bg-surface-container active:scale-95 transition-transform" href="tel:0651129988">
+<span class="material-symbols-outlined text-[18px] text-primary">call</span>
+<span>โทรศัพท์</span>
+</a>
+<a class="flex-1 h-9 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 hover:bg-surface-container active:scale-95 transition-transform" href="mailto:natthakan@beyondsupply.com">
+<span class="material-symbols-outlined text-[18px] text-secondary">mail</span>
+<span>ส่งอีเมล</span>
+</a>
+<button class="w-9 h-9 rounded-lg bg-surface-container-highest text-on-surface flex items-center justify-center hover:bg-surface-container active:scale-95 transition-all" onclick="triggerQuickLog('คุณณัฐกานต์')">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+</button>
+</div>
+</article>
+<!-- Card 5: คุณธนภัทร ธรรมศาสตร์ -->
+<article class="relative bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all duration-200 overflow-visible" data-card-id="5" data-search="ธนภัทร ธรรมศาสตร์ สตาร์ทอัพ โค้ดแล็บ codelab tnp 0834455667" data-status="followup">
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-11 h-11 rounded-full overflow-hidden flex-shrink-0 bg-surface-container-high shadow-inner">
+<img class="w-full h-full object-cover" data-alt="A modern young Asian tech founder wearing casual collared shirt in a vibrant startup coworking space with tech gadgetry, soft ambient morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGzo_0bkZos6l_rkGnjaIIYItR2_7QkdwsEN7waZOyF9r_0ZbIoEs6RRH8Vmxq4B0k7GpfKTfUIVNEk4xo_Mp6l6XLGxY_hEu-_cf-tTY0f-nVBcM5KxKx8Ao6y9r1GHdHUOPO31mBuJEiNlxA8aYMRd9Wug-3IaZOri5ZtLi7Wk9JikPpxv5x5vR-Dr01p_X4k8Dy59d4p1azSQk1gT1NRgwxq2xtroEts1Ax7SGHPl9e4rORZ3D2"/>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">คุณธนภัทร ธรรมศาสตร์</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">สตาร์ทอัพ โค้ดแล็บ</p>
+</div>
+</div>
+<div class="flex items-center gap-1 flex-shrink-0">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-amber-100 text-amber-900 font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+              รอติดตาม
+            </span>
+<div class="relative">
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="toggleCardMenu(event, 'menu-5')">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+<div class="hidden absolute right-0 top-9 z-20 w-36 bg-surface-container-lowest rounded-xl shadow-xl py-1 flex-col" id="menu-5">
+<button class="w-full px-3 py-2 text-left font-label-md text-label-md text-on-surface hover:bg-surface-container flex items-center gap-2" onclick="triggerAction('edit', 'คุณธนภัทร')">
+<span class="material-symbols-outlined text-[16px] text-primary">edit</span>แก้ไขข้อมูล
+                </button>
+<button class="w-full px-3 py-2 text-left font-label-md text-label-md text-on-surface hover:bg-surface-container flex items-center gap-2" onclick="triggerAction('reschedule', 'คุณธนภัทร')">
+<span class="material-symbols-outlined text-[16px] text-secondary">update</span>เลื่อนนัดหมาย
+                </button>
+<button class="w-full px-3 py-2 text-left font-label-md text-label-md text-error hover:bg-error-container/30 flex items-center gap-2" onclick="triggerAction('delete', 'คุณธนภัทร')">
+<span class="material-symbols-outlined text-[16px]">delete</span>ลบรายชื่อ
+                </button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-high/40">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-[18px] text-amber-700 flex-shrink-0">event</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">ติดตาม: 26 มี.ค. 2568 (14:00 น.)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">อีก 2 วัน</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex items-start gap-2 shadow-inner">
+<span class="material-symbols-outlined text-[16px] text-outline flex-shrink-0 mt-0.5">sticky_note_2</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">"ขอดู Deck แนะนำบริการและใบราคา Standard Pack ก่อนนัดเดโมออนไลน์"</p>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container">
+<span class="material-symbols-outlined text-[13px] text-primary">phone</span> 083-445-5667
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container">
+<span class="material-symbols-outlined text-[13px] text-tertiary">chat</span> tnp_codelab
+          </span>
+</div>
+</div>
+<div class="px-space-md py-2.5 bg-surface-container-low rounded-b-xl flex items-center justify-between gap-space-xs">
+<a class="flex-1 h-9 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" href="tel:0834455667">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>โทรออก</span>
+</a>
+<button class="flex-1 h-9 rounded-lg bg-tertiary text-on-tertiary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" onclick="triggerLine('tnp_codelab')">
+<span class="material-symbols-outlined text-[18px]">chat_bubble</span>
+<span>LINE แชท</span>
+</button>
+<button class="w-9 h-9 rounded-lg bg-surface-container-highest text-on-surface flex items-center justify-center hover:bg-surface-container active:scale-95 transition-all" onclick="triggerQuickLog('คุณธนภัทร')">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+</button>
+</div>
+</article>
+<!-- Empty State Result (Hidden by default) -->
+<div class="hidden flex-col items-center justify-center py-12 px-margin text-center bg-surface-container-lowest rounded-2xl shadow-sm" id="noResultsState">
+<div class="w-16 h-16 rounded-full bg-surface-container-highest flex items-center justify-center text-primary mb-3">
+<span class="material-symbols-outlined text-[32px]">person_search</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">ไม่พบข้อมูลผู้ติดต่อ</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mb-4">ลองปรับเปลี่ยนคำค้นหา หรือรีเซ็ตตัวกรองเพื่อดูข้อมูลทั้งหมด</p>
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm active:scale-95 transition-all" onclick="resetFilters()">
+        ล้างการค้นหา
+      </button>
+</div>
+</div>
+<!-- Sticky Bottom Floating Action Helper Area -->
+<div class="sticky bottom-20 z-30 flex justify-end pointer-events-none mt-2">
+<button class="pointer-events-auto h-12 px-5 rounded-full bg-primary-container text-on-primary shadow-lg hover:shadow-xl active:scale-95 flex items-center gap-2 transition-all" onclick="triggerNewContactModal()">
+<span class="material-symbols-outlined text-[22px]">person_add</span>
+<span class="font-label-lg text-label-lg font-bold">เพิ่มรายชื่อใหม่</span>
+</button>
+</div>
+<!-- Interactive Quick Note Log Bottom Drawer / Sheet Simulator -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden items-end justify-center" id="quickLogModal">
+<div class="w-full max-w-md bg-surface-container-lowest rounded-t-2xl shadow-2xl p-space-lg flex flex-col gap-space-md animate-in slide-in-from-bottom duration-200">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">บันทึกกิจกรรมด่วน</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant" id="modalTargetName">กำลังบันทึก</p>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-on-surface" onclick="closeQuickLogModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium">ผลการติดต่อล่าสุด</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="py-2 px-1 rounded-lg bg-surface-container text-on-surface text-center font-label-sm text-label-sm hover:bg-primary hover:text-on-primary transition-colors" type="button">รับสาย สนใจ</button>
+<button class="py-2 px-1 rounded-lg bg-surface-container text-on-surface text-center font-label-sm text-label-sm hover:bg-primary hover:text-on-primary transition-colors" type="button">ไม่รับสาย</button>
+<button class="py-2 px-1 rounded-lg bg-surface-container text-on-surface text-center font-label-sm text-label-sm hover:bg-primary hover:text-on-primary transition-colors" type="button">นัดหมายใหม่</button>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium" for="logDetailInput">รายละเอียดเพิ่มเติม</label>
+<textarea class="w-full p-3 rounded-xl bg-surface-container-high/40 text-on-surface text-body-sm font-body-sm focus:outline-none focus:ring-2 focus:ring-primary/20" id="logDetailInput" placeholder="ระบุสิ่งที่คุย หรือสิ่งที่ต้องดำเนินการต่อ..." rows="3"></textarea>
+</div>
+<div class="flex items-center gap-space-xs pt-1">
+<button class="flex-1 h-11 rounded-lg bg-surface-container text-on-surface-variant font-label-lg text-label-lg active:scale-95 transition-all" onclick="closeQuickLogModal()">ยกเลิก</button>
+<button class="flex-1 h-11 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg font-semibold shadow-md active:scale-95 transition-all" onclick="submitQuickLog()">บันทึกผล</button>
+</div>
+</div>
+</div>
+<!-- Toast Notification Simulator -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 hidden items-center gap-2 px-4 py-2.5 rounded-full bg-inverse-surface text-inverse-on-surface shadow-xl font-label-md text-label-md transition-opacity duration-300" id="toastNotification">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">check_circle</span>
+<span id="toastMessage">บันทึกข้อมูลเรียบร้อยแล้ว</span>
+</div>
+</div>
+<script>
+  let activeFilter = 'all';
+  let sortDirection = 'asc';
+
+  const searchInput = document.getElementById('contactSearchInput');
+  const clearSearchBtn = document.getElementById('clearSearchBtn');
+  const filterChips = document.querySelectorAll('.filter-chip');
+  const cardsFeed = document.getElementById('contactCardsFeed');
+  const contactCards = document.querySelectorAll('article[data-card-id]');
+  const noResultsState = document.getElementById('noResultsState');
+  const quickLogModal = document.getElementById('quickLogModal');
+  const modalTargetName = document.getElementById('modalTargetName');
+  const toastNotification = document.getElementById('toastNotification');
+  const toastMessage = document.getElementById('toastMessage');
+
+  // Search input handler
+  searchInput.addEventListener('input', function(e) {
+    const val = e.target.value.trim().toLowerCase();
+    clearSearchBtn.classList.toggle('hidden', val.length === 0);
+    applyFilters();
+  });
+
+  clearSearchBtn.addEventListener('click', function() {
+    searchInput.value = '';
+    clearSearchBtn.classList.add('hidden');
+    searchInput.focus();
+    applyFilters();
+  });
+
+  // Filter chips click handler
+  filterChips.forEach(chip => {
+    chip.addEventListener('click', function() {
+      filterChips.forEach(c => {
+        c.classList.remove('bg-primary', 'text-on-primary');
+        if (!c.classList.contains('bg-error-container')) {
+          c.classList.add('bg-surface-container', 'text-on-surface-variant');
+        }
+      });
+
+      this.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      if (!this.classList.contains('bg-error-container')) {
+        this.classList.add('bg-primary', 'text-on-primary');
+      }
+
+      activeFilter = this.getAttribute('data-filter');
+      applyFilters();
+    });
+  });
+
+  function applyFilters() {
+    const query = searchInput.value.trim().toLowerCase();
+    let visibleCount = 0;
+
+    contactCards.forEach(card => {
+      const cardStatus = card.getAttribute('data-status');
+      const cardSearchText = card.getAttribute('data-search').toLowerCase();
+
+      const matchesStatus = (activeFilter === 'all') || (cardStatus === activeFilter);
+      const matchesSearch = !query || cardSearchText.includes(query);
+
+      if (matchesStatus && matchesSearch) {
+        card.classList.remove('hidden');
+        visibleCount++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+    noResultsState.classList.toggle('hidden', visibleCount > 0);
+    noResultsState.classList.toggle('flex', visibleCount === 0);
+  }
+
+  function resetFilters() {
+    searchInput.value = '';
+    clearSearchBtn.classList.add('hidden');
+    const allChip = document.querySelector('button[data-filter="all"]');
+    if (allChip) allChip.click();
+  }
+
+  // Toggle Context Dropdown Menu on contact cards
+  function toggleCardMenu(event, menuId) {
+    event.stopPropagation();
+    document.querySelectorAll('[id^="menu-"]').forEach(menu => {
+      if (menu.id !== menuId) menu.classList.add('hidden');
+    });
+    const targetMenu = document.getElementById(menuId);
+    if (targetMenu) {
+      targetMenu.classList.toggle('hidden');
+      targetMenu.classList.toggle('flex');
+    }
+  }
+
+  // Close menus when clicking outside
+  document.addEventListener('click', function() {
+    document.querySelectorAll('[id^="menu-"]').forEach(menu => {
+      menu.classList.add('hidden');
+      menu.classList.remove('flex');
+    });
+  });
+
+  // Action simulators
+  function triggerAction(actionType, name) {
+    if (actionType === 'delete') {
+      showToast('ลบรายการของ ' + name + ' แล้ว');
+    } else if (actionType === 'edit') {
+      showToast('เปิดหน้าต่างแก้ไขข้อมูล ' + name);
+    } else if (actionType === 'reschedule') {
+      showToast('เลื่อนกำหนดการติดตาม ' + name);
+    }
+  }
+
+  function triggerLine(lineId) {
+    showToast('กำลังเปิด LINE เพื่อทักหา: @' + lineId);
+  }
+
+  function triggerQuickLog(name) {
+    modalTargetName.textContent = 'บันทึกการคุยกับ ' + name;
+    quickLogModal.classList.remove('hidden');
+    quickLogModal.classList.add('flex');
+  }
+
+  function closeQuickLogModal() {
+    quickLogModal.classList.add('hidden');
+    quickLogModal.classList.remove('flex');
+  }
+
+  function submitQuickLog() {
+    closeQuickLogModal();
+    showToast('บันทึกบันทึกกิจกรรมเรียบร้อยแล้ว');
+  }
+
+  function triggerNewContactModal() {
+    showToast('เปิดแบบฟอร์มสร้างรายชื่อใหม่');
+  }
+
+  function showToast(message) {
+    toastMessage.textContent = message;
+    toastNotification.classList.remove('hidden');
+    toastNotification.classList.add('flex');
+    setTimeout(() => {
+      toastNotification.classList.add('hidden');
+      toastNotification.classList.remove('flex');
+    }, 2400);
+  }
+
+  // Sort simulator toggle
+  document.getElementById('sortToggleBtn').addEventListener('click', function() {
+    const textEl = document.getElementById('sortText');
+    if (sortDirection === 'asc') {
+      sortDirection = 'desc';
+      textEl.textContent = 'วันที่ติดตาม (ไกลสุด)';
+      showToast('จัดเรียง: วันที่ติดตาม (ไกลสุด)');
+    } else {
+      sortDirection = 'asc';
+      textEl.textContent = 'วันที่ติดตาม (ใกล้สุด)';
+      showToast('จัดเรียง: วันที่ติดตาม (ใกล้สุด)');
+    }
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-4px_16px_rgba(15,23,42,0.04)]" data-active-classes="text-primary font-label-md"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[64px] h-12 gap-1 text-on-surface-variant transition-all hover:text-on-surface" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[24px]">dashboard</span><span class="font-label-sm text-label-sm">แดชบอร์ด</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[64px] h-12 gap-1 transition-all text-primary font-label-md" data-path="contacts" href="#"><span class="material-symbols-outlined text-[24px]">group</span><span class="font-label-sm text-label-sm">รายชื่อ</span></a><a class="flex flex-col items-center justify-center min-w-[64px] h-12 text-on-surface-variant transition-all hover:text-on-surface" data-path="new-contact" href="#"><div class="w-11 h-11 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-[0_4px_12px_rgba(53,37,205,0.25)]"><span class="material-symbols-outlined text-[24px]">person_add</span></div></a><a class="flex flex-col items-center justify-center min-w-[64px] h-12 gap-1 text-on-surface-variant transition-all hover:text-on-surface" data-path="settings" href="#"><span class="material-symbols-outlined text-[24px]">tune</span><span class="font-label-sm text-label-sm">การตั้งค่า</span></a></div></nav></body></html>

@@ -1,0 +1,40 @@
+.page { min-height: 100dvh; display: grid; grid-template-columns: minmax(0, 560px) minmax(320px, 1fr); background: var(--surface); }
+.authCard { width: min(100%, 430px); margin: auto; padding: 48px 32px; }
+.brandMark { width: 48px; height: 48px; padding: 9px; display: flex; align-items: flex-end; gap: 4px; border-radius: 14px; background: var(--primary); box-shadow: 0 8px 20px rgb(53 37 205 / 22%); }
+.brandMark span { flex: 1; border-radius: 3px; background: white; }
+.brandMark span:nth-child(1) { height: 45%; opacity: .65; }
+.brandMark span:nth-child(2) { height: 72%; opacity: .82; }
+.brandMark span:nth-child(3) { height: 100%; }
+.authCard header { margin: 28px 0 30px; }
+.authCard header p { margin: 0 0 8px; color: var(--primary); font-size: 11px; font-weight: 700; letter-spacing: .12em; }
+.authCard header h1 { margin: 0 0 8px; font-size: 28px; line-height: 34px; letter-spacing: -.02em; }
+.authCard header > span { color: var(--on-surface-variant); font-size: 14px; }
+.authCard form { display: flex; flex-direction: column; gap: 16px; }
+.authCard label { display: flex; flex-direction: column; gap: 6px; color: var(--on-surface-variant); font-size: 12px; font-weight: 600; }
+.inputWrap { height: 46px; padding: 0 12px; display: flex; align-items: center; gap: 9px; border: 1px solid #cbd5e1; border-radius: 9px; background: white; transition: .15s ease; }
+.inputWrap:focus-within { border-color: var(--primary-container); box-shadow: 0 0 0 3px rgb(79 70 229 / 15%); }
+.inputWrap > svg { flex: 0 0 auto; color: var(--outline); }
+.inputWrap input { min-width: 0; flex: 1; height: 100%; padding: 0; border: 0; outline: 0; background: transparent; font-size: 14px; }
+.inputWrap input::placeholder { color: #94a3b8; }
+.inputWrap button { width: 32px; height: 32px; display: grid; place-items: center; border-radius: 7px; background: transparent; color: var(--outline); }
+.inputWrap button:hover { background: var(--surface-low); }
+.error { padding: 10px 12px; border: 1px solid #fecaca; border-radius: 8px; background: #fef2f2; color: #991b1b; font-size: 12px; }
+.submit { height: 46px; margin-top: 4px; display: flex; align-items: center; justify-content: center; gap: 8px; border-radius: 9px; background: var(--primary-container); color: white; font-size: 14px; font-weight: 700; box-shadow: 0 5px 14px rgb(53 37 205 / 20%); transition: .15s ease; }
+.submit:hover:not(:disabled) { background: var(--primary); transform: translateY(-1px); }
+.submit:disabled { cursor: wait; opacity: .65; }
+.authCard footer { margin-top: 24px; color: var(--on-surface-variant); font-size: 13px; text-align: center; }
+.authCard footer a { margin-left: 5px; color: var(--primary); font-weight: 700; }
+.contextPanel { position: relative; overflow: hidden; padding: 64px; display: flex; flex-direction: column; justify-content: flex-end; background: linear-gradient(145deg, #0f172a, #283044 60%, #3525cd); color: white; }
+.contextPanel::before, .contextPanel::after { content: ""; position: absolute; border: 1px solid rgb(255 255 255 / 10%); border-radius: 50%; }
+.contextPanel::before { width: 520px; height: 520px; top: -210px; right: -170px; }
+.contextPanel::after { width: 340px; height: 340px; top: -120px; right: -80px; }
+.contextPanel > div { position: absolute; top: 50%; left: 50%; width: 230px; padding: 24px; transform: translate(-50%, -60%); border: 1px solid rgb(255 255 255 / 14%); border-radius: 20px; background: rgb(255 255 255 / 8%); box-shadow: 0 24px 60px rgb(0 0 0 / 18%); backdrop-filter: blur(12px); }
+.contextPanel > div span { color: #c3c0ff; font-size: 12px; font-weight: 600; }
+.contextPanel > div strong { display: block; margin: 8px 0 2px; font-size: 54px; line-height: 1; }
+.contextPanel > div p { margin: 0; color: #eef0ff; font-size: 14px; }
+.contextPanel blockquote { position: relative; z-index: 1; max-width: 460px; margin: 0; color: #eef0ff; font-size: 22px; font-weight: 600; line-height: 1.55; }
+@media (max-width: 800px) {
+  .page { grid-template-columns: 1fr; }
+  .authCard { padding: 36px 24px; }
+  .contextPanel { display: none; }
+}

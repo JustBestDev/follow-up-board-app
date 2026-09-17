@@ -1,0 +1,59 @@
+:root {
+  --surface: #faf8ff;
+  --surface-lowest: #ffffff;
+  --surface-low: #f2f3ff;
+  --surface-container: #eaedff;
+  --surface-high: #e2e7ff;
+  --surface-highest: #dae2fd;
+  --on-surface: #131b2e;
+  --on-surface-variant: #464555;
+  --outline: #777587;
+  --primary: #3525cd;
+  --primary-container: #4f46e5;
+  --secondary: #006398;
+  --tertiary: #005338;
+  --error: #ba1a1a;
+  --error-container: #ffdad6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--surface);
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  background: var(--surface);
+  color: var(--on-surface);
+  font-family: var(--font-inter), var(--font-noto-sans-thai), sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea {
+  color: inherit;
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
