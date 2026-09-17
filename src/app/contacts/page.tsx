@@ -462,7 +462,7 @@ export default function Home() {
             <div className={styles.formGrid}>
               <label>ชื่อ<input required value={draft.name} onChange={(event) => setDraft({ ...draft, name: event.target.value })} /></label>
               <label>บริษัทหรือองค์กร<input required value={draft.company} onChange={(event) => setDraft({ ...draft, company: event.target.value })} /></label>
-              <label>อีเมล<input type="email" value={draft.email} onChange={(event) => setDraft({ ...draft, email: event.target.value })} /></label>
+              <label>อีเมล<input type="text" inputMode="email" value={draft.email} onChange={(event) => setDraft({ ...draft, email: event.target.value })} /></label>
               <label>เบอร์โทรศัพท์<input required value={draft.phone} onChange={(event) => setDraft({ ...draft, phone: event.target.value })} /></label>
               <label>ช่องทางติดต่อ<input required placeholder="เช่น LINE: username" value={draft.channel} onChange={(event) => setDraft({ ...draft, channel: event.target.value })} /></label>
               <label>สิ่งที่สนใจ<input required value={draft.interest} onChange={(event) => setDraft({ ...draft, interest: event.target.value })} /></label>
